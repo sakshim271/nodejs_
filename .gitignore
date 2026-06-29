@@ -2,7 +2,7 @@
 
 
 node_modules/
-
+.env
 //node_modules is usually added to .gitignore because it is large, automatically generated, 
 //and easy to recreate. Instead of storing thousands of dependency files, Git stores only the list of
 //dependencies in package.json (and usually package-lock.json).
