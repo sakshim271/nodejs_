@@ -1,11 +1,11 @@
-const express=require('express');    // imports Express library store it in var express
-const router =express.Router();     //  create router obj to use express feature here router
+const express=require('express');    
+const router =express.Router();     
 const menuitem = require('./../models/menu');
 
 router.post('/',async(req,res)=>{
   try{
-    const data2= req.body
-    const newmenuitem= new menuitem(data2);
+    const data2= req.body                      
+    const newmenuitem= new menuitem(data2);        
     const response= await newmenuitem.save();
     console.log('data saved');
     res.status(200).json(response);
